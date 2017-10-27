@@ -1,0 +1,94 @@
+{
+  "name": "baptistemanson/abecms",
+  "version": "0.1.4",
+  "libraries": {
+    "xv": "^1.1.25"
+  },
+  "title": "test",
+  "branch": "",
+  "style": {
+    "name": "Material",
+    "componentSet": {
+      "nav": "nav/DarkAbsoluteNav",
+      "header": "header/GradientHeader",
+      "article": "article/BasicArticle",
+      "footer": "footer/BasicFooter"
+    },
+    "fontFamily": "Roboto, sans-serif",
+    "heading": {
+      "fontWeight": 500,
+      "letterSpacing": "-0.01em"
+    },
+    "colors": {
+      "text": "#212121",
+      "background": "#fff",
+      "primary": "#2196f3",
+      "secondary": "#1565c0",
+      "highlight": "#ff4081",
+      "border": "#e0e0e0",
+      "muted": "#f5f5f5"
+    },
+    "layout": {
+      "centered": true,
+      "bannerHeight": "80vh",
+      "maxWidth": 896
+    }
+  },
+  "content": [
+    {
+      "component": "nav",
+      "links": [
+        {
+          "href": "https://www.abecms.com",
+          "text": "Home"
+        },
+        {
+          "href": "https://github.com/baptistemanson/abecms",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://npmjs.com/package/abecms",
+          "text": "npm"
+        }
+      ]
+    },
+    {
+      "component": "header",
+      "heading": "abecms",
+      "subhead": "The lightning fast CMS",
+      "children": [
+        {
+          "component": "ui/TweetButton",
+          "text": "abecms: The lightning fast CMS",
+          "url": "https://www.abecms.com"
+        },
+        {
+          "component": "ui/GithubButton",
+          "user": "baptistemanson",
+          "repo": "abecms"
+        }
+      ],
+      "text": "v3.6.1"
+    },
+    {
+      "component": "article",
+      "metadata": {
+        "source": "github.readme"
+      },
+      "html": "<blockquote>\n<p><strong>The version 3 is here ! See the <a href=\"./version3.md\">release notes</a></strong></p>\n<hr>\n</blockquote>\n<p><a href=\"https://travis-ci.org/abecms/abecms\"><img src=\"https://travis-ci.org/abecms/abecms.svg\"></a>\n<a href=\"https://ci.appveyor.com/project/gregorybesson/abecms-d118d/branch/master\"><img src=\"https://ci.appveyor.com/api/projects/status/o22xl2y3tc2javh2/branch/master?svg=true\"></a>\n<a href=\"https://scrutinizer-ci.com/g/abecms/abecms/\"><img src=\"https://scrutinizer-ci.com/g/abecms/abecms/badges/quality-score.png?b=master\"></a>\n<a href=\"http://packagequality.com/#?package=abecms\"><img src=\"http://npm.packagequality.com/shield/abecms.svg\"></a>\n<a href=\"https://coveralls.io/github/abecms/abecms?branch=master\"><img src=\"https://coveralls.io/repos/github/abecms/abecms/badge.svg?branch=master\"></a>\n<a href=\"https://www.versioneye.com/user/projects/587a81915450ea0034dffa93\"><img src=\"https://www.versioneye.com/user/projects/587a81915450ea0034dffa93/badge.svg?style=flat-square\"></a>\n<a href=\"https://www.npmjs.com/package/abecms\"><img src=\"https://img.shields.io/npm/v/abecms.svg\"></a></p>\n<p><a href=\"https://raw.githubusercontent.com/abecms/abecms/master/LICENSE\"><img src=\"https://img.shields.io/badge/license-MIT-blue.svg\"></a>\n<a href=\"https://www.npmjs.com/package/abecms\"><img src=\"https://img.shields.io/npm/dt/abecms.svg\"></a></p>\n<h1>AbeCMS</h1>\n<blockquote>\n<p>AbeCMS is your <strong>new CMS</strong> with revolutionary <strong>self-descriptive</strong> templates</p>\n</blockquote>\n<p>When creating blogs becomes as easy as 1-2-3. AbeCMS is an API first + static site generator with a great back-office for users.</p>\n<p>For agencies: Go 12X faster than with Wordpress or Drupal to create websites and blogs\nFor devs: A js full stack framework for js full stack devs with extensibility and efficiency in mind</p>\n<ul>\n<li><strong>Markup your html templates with specific tags</strong>, and your back-office is ready to go: It&apos;s time to contribute for your users!</li>\n<li>Add a complete <strong>workflow</strong> of validation and permissions with ease, using the state of the art oAuth2 stack.</li>\n<li><strong>Deploy automagically</strong> to Surge, AWS S3, Github.io, or any web server via SFTP</li>\n<li>Create multi-languages, multi-locales, complex web structures in no time</li>\n<li>Add <strong>plugins</strong> like abe-algolia, abe-elasticsearch... or create your own with just js skill</li>\n</ul>\n<p><img src=\"/tests/demo/site/images/abeCMS-demo.gif\"></p>\n<h1>Goals</h1>\n<ul>\n<li>Being the easiest CMS on the planet <strong>for the developpers</strong> by providing 1 clear api stack to rule them all and using a html markup usable by non-devs to create a full website:<ul>\n<li>Develop your HTML templates with hot reload and see changes in real time</li>\n<li>Develop your plugins with hor reload and see also changes in real time</li>\n<li>Directory-based URLs. Create directories and subdirectories in AbeCMS, the URL page will be expressed from its spot on the filesystem.</li>\n<li>Focus on your HTML integration, dynamizing it becomes a breeze with AbeCMS</li>\n</ul>\n</li>\n<li>Being the easiest CMS on the planet <strong>for the users</strong> by using hyper clean pages and A REAL wysiwyg editor fast and easy to use:<ul>\n<li>One Dashboard for your analytics</li>\n<li>One Manager page for listing and searching all your posts</li>\n<li>One editor with a REAL wysiwyg of your post</li>\n<li>One page for managing your users and their authorizations</li>\n<li>THAT&apos;S ALL !</li>\n</ul>\n</li>\n<li>Being <strong>content focused</strong> (the C in CMS):<ul>\n<li>Data are created as JSON documents</li>\n<li>An API-first Server to serve your documents as json</li>\n<li>Or a static website generator</li>\n<li>Or both !</li>\n</ul>\n</li>\n</ul>\n<h1>Why use AbeCMS instead of other CMS or Static Site Generators ?</h1>\n<ul>\n<li>Designed for users</li>\n<li>A real <strong>Wysiwyg Editor</strong></li>\n<li>A real <strong>workflow</strong> and authorization engine based on oAuth2</li>\n<li><strong>Auto-generation of the back-office</strong> editor based on your markup</li>\n<li><strong>Live editing</strong> on each part of your site during development dramatically increasing the dev speed</li>\n<li>A <strong>strong separation of data and templates</strong> making the reuse of data a breeze</li>\n<li>A <strong>API-first REST server</strong>: You create html pages and can consume data for your mobile, emails or whatever</li>\n</ul>\n<h1>Some sites built with AbeCMS</h1>\n<p>If you want us to add your sites, submit a PR of this README.</p>\n<ul>\n<li>accorhotels.com magazine (multi-languages, many contributors): <a href=\"http://www.accorhotels.com/fr/france/magazine/index.shtml\">http://www.accorhotels.com/fr/france/magazine/index.shtml</a></li>\n<li>Gemo storelocators: <a href=\"http://www.gemo-shop.be/\">http://www.gemo-shop.be/</a>, <a href=\"http://www.gemo.tn/\">http://www.gemo.tn/</a>, <a href=\"http://www.gemo.gp/\">http://www.gemo.gp/</a>, <a href=\"http://www.gemo.ma/\">http://www.gemo.ma/</a>, <a href=\"http://www.gemo.gf/\">http://www.gemo.gf/</a>, <a href=\"http://www.gemo.mq/\">http://www.gemo.mq/</a>, <a href=\"http://www.gemo.re/\">http://www.gemo.re/</a></li>\n<li><a href=\"https://onadates.com/\">https://onadates.com/</a></li>\n<li>Hautes Pyren&#xE9;es: <a href=\"http://neige.hautes-pyrenees.fr/\">http://neige.hautes-pyrenees.fr/</a></li>\n<li>Lourdes Pireneje: <a href=\"http://lourdes-pireneje.pl/\">http://lourdes-pireneje.pl/</a></li>\n<li>blablacar: <a href=\"https://www.blablacar.fr/offre/voitures/\">https://www.blablacar.fr/offre/voitures/</a></li>\n<li>Sofitel destinations: <a href=\"http://www.sofitel.com/fr/destinations/index.shtml\">http://www.sofitel.com/fr/destinations/index.shtml</a></li>\n<li>Ch&#xE2;teau d&apos;Angles: <a href=\"http://www.chateaudangles.com/en/index.html\">http://www.chateaudangles.com/en/index.html</a></li>\n<li>Thai Kitchen: <a href=\"https://www.thaikitchen.fr\">https://www.thaikitchen.fr</a></li>\n<li>Askja: <a href=\"http://www.askja-audio.com/\">http://www.askja-audio.com/</a></li>\n<li>eNewsletters Novotel (become a member to see the newsletters ;)</li>\n<li>eNewsletters Accor Club (become a member to see the newsletters ;)</li>\n<li><a href=\"http://www.mariderm.com/\">http://www.mariderm.com/</a></li>\n<li><a href=\"http://www.peauologie.com/\">http://www.peauologie.com/</a></li>\n<li><a href=\"http://paysagementbelisle.com/\">http://paysagementbelisle.com/</a></li>\n<li><a href=\"http://betasite.coherence45.com/en/\">http://betasite.coherence45.com/en/</a></li>\n<li><a href=\"http://vibeavenue.com/en/\">http://vibeavenue.com/en/</a></li>\n<li>...</li>\n</ul>\n<h1>Recipes, plugins, blogs</h1>\n<p>We have created recipes which are how-to&apos;s on specific subjects. If you wan&apos;t us to add your recipes, just send us a PR of this README:</p>\n<h2>Recipes</h2>\n<ul>\n<li>Recipe abemail: <a href=\"https://github.com/abecms/recipe-abemail\">https://github.com/abecms/recipe-abemail</a></li>\n<li>Recipe Googlemaps: <a href=\"https://github.com/abecms/recipe-googlemaps\">https://github.com/abecms/recipe-googlemaps</a></li>\n<li>Recipe abedynamicblocks: <a href=\"https://github.com/abecms/recipe-abedynamicblocks\">https://github.com/abecms/recipe-abedynamicblocks</a></li>\n<li>Recipe elacticsearch:<a href=\"https://github.com/abecms/recipe-elasticsearch\">https://github.com/abecms/recipe-elasticsearch</a></li>\n<li>Recipe PM2: <a href=\"https://github.com/abecms/recipe-pm2\">https://github.com/abecms/recipe-pm2</a></li>\n<li>Recipe abe types: <a href=\"https://github.com/abecms/recipe-abetypes\">https://github.com/abecms/recipe-abetypes</a></li>\n<li>Recipe abe data: <a href=\"https://github.com/abecms/recipe-abedata1\">https://github.com/abecms/recipe-abedata1</a></li>\n</ul>\n<h2>Plugins</h2>\n<ul>\n<li><strong>Sublime editor snippets</strong>: <a href=\"https://github.com/wonknu/abe-sublime-snippets\">https://github.com/wonknu/abe-sublime-snippets</a></li>\n<li><strong>Vim Intellij snippets</strong>: <a href=\"https://github.com/GG31/abecms-plugin-for-vim-intellij\">https://github.com/GG31/abecms-plugin-for-vim-intellij</a></li>\n<li><strong>Visual Studio Code snippets</strong>: <a href=\"https://marketplace.visualstudio.com/items?itemName=tamsibesson.abe\">https://marketplace.visualstudio.com/items?itemName=tamsibesson.abe</a></li>\n<li>abe-deployer-sftp: <a href=\"https://github.com/abecms/abe-deployer-sftp\">https://github.com/abecms/abe-deployer-sftp</a></li>\n<li>abe-deployer-git: <a href=\"https://github.com/abecms/abe-deployer-git\">https://github.com/abecms/abe-deployer-git</a></li>\n<li>abe-deployer-s3: <a href=\"https://github.com/abecms/abe-deployer-s3\">https://github.com/abecms/abe-deployer-s3</a></li>\n<li>abe-sitemap: <a href=\"https://github.com/abecms/abe-sitemap\">https://github.com/abecms/abe-sitemap</a></li>\n<li>abe-algolia: <a href=\"https://github.com/abecms/abe-algolia\">https://github.com/abecms/abe-algolia</a></li>\n<li>abe-elasticsearch: <a href=\"https://github.com/abecms/abe-elasticsearch\">https://github.com/abecms/abe-elasticsearch</a></li>\n<li>abe-packagz: <a href=\"https://github.com/abecms/abe-packagz\">https://github.com/abecms/abe-packagz</a></li>\n<li>abe-calendar: <a href=\"https://github.com/abecms/abe-calendar\">https://github.com/abecms/abe-calendar</a></li>\n</ul>\n<h2>blogs</h2>\n<ul>\n<li>An article on AbeCMS usage (in FR): <a href=\"http://www.disko.fr/reflexions/technique/abecms/\">http://www.disko.fr/reflexions/technique/abecms/</a></li>\n<li>A video introduction to AbeCMS by a HackReactor student: <a href=\"https://www.youtube.com/watch?v=J8zQ1s6jAdQ\">https://www.youtube.com/watch?v=J8zQ1s6jAdQ</a></li>\n</ul>\n<h1>Demo</h1>\n<p>Deploy your own Abe demo on Heroku</p>\n<p><a href=\"https://heroku.com/deploy?template=https://github.com/abecms/demo\"><img src=\"https://www.herokucdn.com/deploy/button.svg\"></a></p>\n<h1>Getting started</h1>\n<h2>Install</h2>\n<p><code>$ npm install -g abecms</code></p>\n<h2>Usage</h2>\n<ol>\n<li><code>abe init</code> : It launches a wizard to help you create your website</li>\n<li><code>cd my-website</code></li>\n<li><code>abe serve -i</code> : launch your website (by default on port 3000)</li>\n</ol>\n<p>See the documentation below for details</p>\n<h1>Complete documentation</h1>\n<h2>First steps</h2>\n<ul>\n<li><a href=\"first-steps.md\">First steps with AbeCMS</a></li>\n</ul>\n<h2>Template designer references</h2>\n<ul>\n<li><a href=\"docs/abe-tags.md\">abe tags template integration</a></li>\n<li><a href=\"docs/abe-attributes.md\">abe attributes</a></li>\n<li><a href=\"docs/abe-handlebars-variables.md\">abe handlebars variables</a></li>\n<li><a href=\"docs/abe-handlebars-helpers.md\">abe handlebars helpers</a></li>\n</ul>\n<h2>Template cms admin</h2>\n<ul>\n<li><a href=\"docs/abe-users.md\">abe users management</a></li>\n<li><a href=\"docs/abe-url.md\">abe route list</a></li>\n<li><a href=\"docs/abe-config.md\">abe config json</a></li>\n</ul>\n<h2>Template plugin developer</h2>\n<ul>\n<li><a href=\"docs/abe-plugins.md\">abe plugin install</a></li>\n<li><a href=\"docs/abe-hooks.md\">abe plugin hook list</a></li>\n<li><a href=\"docs/abe-attributes.md\">abe attributes</a></li>\n</ul>\n<h2>Support / Contributing</h2>\n<p>coming soon</p>\n<h1>Roadmap</h1>\n<p>See the complete <a href=\"./ROADMAP.md\">roadmap</a></p>\n"
+    },
+    {
+      "component": "footer",
+      "links": [
+        {
+          "href": "https://github.com/baptistemanson/abecms",
+          "text": "GitHub"
+        },
+        {
+          "href": "https://github.com/baptistemanson",
+          "text": "baptistemanson"
+        }
+      ]
+    }
+  ]
+}
